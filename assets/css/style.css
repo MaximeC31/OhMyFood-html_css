@@ -4,7 +4,7 @@
 	--black-carbon: #353535;
 	--lightgrey-low-opacity: rgba(234, 234, 234, 0.5);
 	--lightgrey: #eaeaea;
-	--lightgreen: #99E2D0;
+	--lightgreen: #99e2d0;
 	--green: #008766;
 	--lightblue: #89c8fa;
 	--blue: #003a68;
@@ -45,9 +45,10 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: opacity 1s 2s;
+	transition: all 2s;
 	opacity: 0;
-	pointer-events: none; 
+	pointer-events: none;
+	animation: loading 2s;
 }
 
 .loader__spinner {
@@ -58,8 +59,6 @@ body {
 	border-radius: 50%;
 	box-sizing: border-box;
 	animation: pulse 1s infinite, rotation 1s infinite;
-	transition: opacity 2s;
-	opacity: 0;
 }
 
 .header {
@@ -121,7 +120,6 @@ body {
 	font-weight: bold;
 	font-size: var(--size-xl);
 	padding: 0 var(--spacing-xl);
-	font-family: Shrikhand;
 }
 
 .explore__research__text {
@@ -155,7 +153,6 @@ body {
 .functioning__title {
 	font-weight: bold;
 	font-size: var(--size-xl);
-	font-family: Shrikhand;
 }
 
 .functioning__main--container {
@@ -208,7 +205,6 @@ body {
 	font-weight: bold;
 	font-size: var(--size-xl);
 	margin-bottom: var(--spacing-lg);
-	font-family: Shrikhand;
 }
 
 .restaurants__container {
@@ -304,8 +300,9 @@ body {
 .menu {
 	position: relative;
 	top: -64px;
+	margin-bottom: initial;
 	background-color: white;
-	border-radius: var(--size-xxxl);
+	border-radius: var(--size-xxxl) var(--size-xxxl) 0 0;
 	padding: var(--spacing-lg) var(--spacing-md) 0 var(--spacing-md);
 	display: flex;
 	flex-direction: column;
@@ -362,30 +359,24 @@ body {
 }
 
 .menu__details__single-part {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-md);
+	width: 100%;
 	opacity: 1;
-    visibility: visible;
+	visibility: visible;
 }
 
 .menu__details__single-part:first-child {
-    opacity: 1;
-    visibility: invisible;
-    animation: fadeIn 4s;
+	animation: fadeIn 1s;
 }
 
 .menu__details__single-part:nth-child(2) {
-    opacity: 1;
-    visibility: visible;
-    animation: fadeIn 5s;
+	animation: fadeIn 2s;
 }
 
 .menu__details__single-part:nth-child(3) {
-    opacity: 1;
-    visibility: visible;
-    animation: fadeIn 6s;
+	animation: fadeIn 3s;
 }
 
 .menu__details__single-part__title:after {
@@ -418,6 +409,7 @@ body {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	font-size: 18px;
 }
 
 .menu__details__single-part__container__semantic__description {
@@ -576,6 +568,7 @@ body {
 		margin: auto;
 		padding: var(--spacing-xl) var(--spacing-xxl);
 		background-color: var(--lightgrey);
+		margin-bottom: -64px;
 	}
 
 	.menu__name {
@@ -715,6 +708,20 @@ body {
 	}
 }
 
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
 @keyframes rotation {
 	from {
 		transform: rotate(0deg);
@@ -724,19 +731,11 @@ body {
 	}
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-	50% {
-        opacity: 0;
-        visibility: visible;
-    }
-
-    100% {
-        opacity: 1;
-        visibility: visible;
-    }
+@keyframes loading {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }
