@@ -2,59 +2,59 @@
 
 <html lang="fr">
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="utf-8">
 
 		<meta
 			name="robots"
-			content="index, follow" />
+			content="index, follow">
 		<title>Le délice des sens, restaurant qualitatif partenaire OhMyFood</title>
 
 		<meta
 			name="description"
-			content="Réservez dés à présent votre menu auprès du restaurant Le délice des sens, partenaire de la plateforme OhMyFood" />
+			content="Réservez dés à présent votre menu auprès du restaurant Le délice des sens, partenaire de la plateforme OhMyFood">
 		<meta
 			property="og:type"
-			content="website" />
+			content="website">
 		<meta
 			property="og:title"
-			content="Le délice des sens, restaurant qualitatif partenaire OhMyFood" />
+			content="Le délice des sens, restaurant qualitatif partenaire OhMyFood">
 		<meta
 			property="og:description"
-			content="Réservez dés à présent votre menu auprès du restaurant Le délice des sens, partenaire de la plateforme OhMyFood" />
+			content="Réservez dés à présent votre menu auprès du restaurant Le délice des sens, partenaire de la plateforme OhMyFood">
 		<meta
 			property="og:image"
-			content="../assets/images/logo/favicon-ohmyfood.svg" />
+			content="../assets/images/logo/favicon-ohmyfood.svg">
 
 		<meta
 			property="twitter:card"
-			content="summary_large_image" />
+			content="summary_large_image">
 		<meta
 			property="twitter:title"
-			content="Le délice des sens, restaurant qualitatif partenaire OhMyFood" />
+			content="Le délice des sens, restaurant qualitatif partenaire OhMyFood">
 		<meta
 			property="twitter:description"
-			content="Réservez dés à présent votre menu auprès du restaurant Le délice des sens, partenaire de la plateforme OhMyFood" />
+			content="Réservez dés à présent votre menu auprès du restaurant Le délice des sens, partenaire de la plateforme OhMyFood">
 		<meta
 			property="twitter:image"
-			content="../assets/images/logo/favicon-ohmyfood.svg" />
+			content="../assets/images/logo/favicon-ohmyfood.svg">
 
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+			content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 		<link
 			rel="shortcut icon"
 			href="../assets/images/logo/favicon-ohmyfood.svg"
-			type="image/svg" />
+			type="image/svg">
 		<link
 			rel="preload"
 			as="style"
 			onload='this.rel="stylesheet"'
-			href="../assets/css/reset.css" />
+			href="../assets/css/reset.css">
 		<link
 			rel="preload"
 			as="style"
 			onload='this.rel="stylesheet"'
-			href="../assets/css/style.css" />
+			href="../assets/css/style.css">
 		<script
 			async
 			src="https://kit.fontawesome.com/2f6094b199.js"
@@ -62,6 +62,10 @@
 	</head>
 
 	<body>
+		<div class="loader">
+			<div class="loader__spinner"></div>
+		</div>
+
 		<header class="header">
 			<a
 				class="header__preview"
@@ -74,19 +78,20 @@
 				<img
 					class="header__link__logo"
 					src="../assets/images/logo/ohmyfood@2x.svg"
-					alt="logo ohmyfood" />
+					alt="logo ohmyfood">
 			</a>
 		</header>
 
 		<main class="main">
 			<img
 				class="main__img"
-				src="../assets/images/restaurants/le-delice-des-sens.webp" />
+				src="../assets/images/restaurants/le-delice-des-sens.webp"
+				alt="photo du restaurant le déclice des sens pour émoustiller vos papilles.">
 
 			<section class="menu">
 				<div class="menu__name">
 					<h1 class="menu__name__title">Le délice des sens</h1>
-					<i class="fa-regular fa-heart rmenu__name__icon"></i>
+					<i class="fa-regular fa-heart menu__name__icon"></i>
 				</div>
 				<div class="menu__details">
 					<article class="menu__details__single-part">
@@ -96,53 +101,63 @@
 								<h3 class="menu__details__single-part__container__semantic__subtitle">Tartare de thon</h3>
 								<p class="menu__details__single-part__container__semantic__description">Assaisonné au yuzu</p>
 							</div>
-							<p class="menu__details__single-part__container__price">25€</p>
-						</div>
-						<div class="menu__details__single-part__container">
-							<div class="menu__details__single-part__container__semantic">
-								<h3 class="menu__details__single-part__container__semantic__subtitle">
-									Bouchée de homard croustillant
-								</h3>
-								<p class="menu__details__single-part__container__semantic__description">
-									Et sa farandole de petits légumes
-								</p>
+							<div class="menu__details__single-part__container__checked-container">
+								<p class="menu__details__single-part__container__checked-container__price">25€</p>
+								<i class="fas fa-check-circle menu__details__single-part__container__checked-container__icon"></i>
 							</div>
-							<p class="menu__details__single-part__container__price">35€</p>
 						</div>
 						<div class="menu__details__single-part__container">
 							<div class="menu__details__single-part__container__semantic">
-								<h3 class="menu__details__single-part__container__semantic__subtitle">
-									Poulet rôti aux herbes de Provence
-								</h3>
+								<h3 class="menu__details__single-part__container__semantic__subtitle">Bouchée de homard croustillant</h3>
+								<p class="menu__details__single-part__container__semantic__description">Et sa farandole de petits légumes</p>
+							</div>
+							<div class="menu__details__single-part__container__checked-container">
+								<p class="menu__details__single-part__container__checked-container__price">35€</p>
+								<i class="fas fa-check-circle menu__details__single-part__container__checked-container__icon"></i>
+							</div>
+						</div>
+						<div class="menu__details__single-part__container">
+							<div class="menu__details__single-part__container__semantic">
+								<h3 class="menu__details__single-part__container__semantic__subtitle">Poulet rôti aux herbes de Provence</h3>
 								<p class="menu__details__single-part__container__semantic__description">Et sa crème de truffe</p>
 							</div>
-							<p class="menu__details__single-part__container__price">40€</p>
+							<div class="menu__details__single-part__container__checked-container">
+								<p class="menu__details__single-part__container__checked-container__price">40€</p>
+								<i class="fas fa-check-circle menu__details__single-part__container__checked-container__icon"></i>
+							</div>
 						</div>
 					</article>
 					<article class="menu__details__single-part">
 						<h2 class="menu__details__single-part__title">PLATS</h2>
 						<div class="menu__details__single-part__container">
 							<div class="menu__details__single-part__container__semantic">
-								<h3 class="menu__details__single-part__container__semantic__subtitle">
-									Poulet rôti aux herbes de Provence
-								</h3>
+								<h3 class="menu__details__single-part__container__semantic__subtitle">Poulet rôti aux herbes de Provence</h3>
 								<p class="menu__details__single-part__container__semantic__description">Et sa crème de truffe</p>
 							</div>
-							<p class="menu__details__single-part__container__price">40€</p>
+							<div class="menu__details__single-part__container__checked-container">
+								<p class="menu__details__single-part__container__checked-container__price">40€</p>
+								<i class="fas fa-check-circle menu__details__single-part__container__checked-container__icon"></i>
+							</div>
 						</div>
 						<div class="menu__details__single-part__container">
 							<div class="menu__details__single-part__container__semantic">
 								<h3 class="menu__details__single-part__container__semantic__subtitle">Langouste rôtie</h3>
 								<p class="menu__details__single-part__container__semantic__description">Et ses légumes de saison</p>
 							</div>
-							<p class="menu__details__single-part__container__price">35€</p>
+							<div class="menu__details__single-part__container__checked-container">
+								<p class="menu__details__single-part__container__checked-container__price">35€</p>
+								<i class="fas fa-check-circle menu__details__single-part__container__checked-container__icon"></i>
+							</div>
 						</div>
 						<div class="menu__details__single-part__container">
 							<div class="menu__details__single-part__container__semantic">
 								<h3 class="menu__details__single-part__container__semantic__subtitle">Côte de bœuf Angus</h3>
 								<p class="menu__details__single-part__container__semantic__description">Et sa purée de panais</p>
 							</div>
-							<p class="menu__details__single-part__container__price">44€</p>
+							<div class="menu__details__single-part__container__checked-container">
+								<p class="menu__details__single-part__container__checked-container__price">44€</p>
+								<i class="fas fa-check-circle menu__details__single-part__container__checked-container__icon"></i>
+							</div>
 						</div>
 					</article>
 					<article class="menu__details__single-part">
@@ -152,21 +167,30 @@
 								<h3 class="menu__details__single-part__container__semantic__subtitle">Farandole de desserts</h3>
 								<p class="menu__details__single-part__container__semantic__description">Du chef</p>
 							</div>
-							<p class="menu__details__single-part__container__price">18€</p>
+							<div class="menu__details__single-part__container__checked-container">
+								<p class="menu__details__single-part__container__checked-container__price">18€</p>
+								<i class="fas fa-check-circle menu__details__single-part__container__checked-container__icon"></i>
+							</div>
 						</div>
 						<div class="menu__details__single-part__container">
 							<div class="menu__details__single-part__container__semantic">
 								<h3 class="menu__details__single-part__container__semantic__subtitle">Crème brulée</h3>
 								<p class="menu__details__single-part__container__semantic__description">Revisitée</p>
 							</div>
-							<p class="menu__details__single-part__container__price">22€</p>
+							<div class="menu__details__single-part__container__checked-container">
+								<p class="menu__details__single-part__container__checked-container__price">22€</p>
+								<i class="fas fa-check-circle menu__details__single-part__container__checked-container__icon"></i>
+							</div>
 						</div>
 						<div class="menu__details__single-part__container">
 							<div class="menu__details__single-part__container__semantic">
 								<h3 class="menu__details__single-part__container__semantic__subtitle">Tiramisu</h3>
 								<p class="menu__details__single-part__container__semantic__description">À la noisette</p>
 							</div>
-							<p class="menu__details__single-part__container__price">23€</p>
+							<div class="menu__details__single-part__container__checked-container">
+								<p class="menu__details__single-part__container__checked-container__price">23€</p>
+								<i class="fas fa-check-circle menu__details__single-part__container__checked-container__icon"></i>
+							</div>
 						</div>
 					</article>
 					<a
@@ -185,7 +209,7 @@
 				<img
 					class="footer__link__logo"
 					src="../assets/images/logo/ohmyfood-white.svg"
-					alt="logo ohmyfood" />
+					alt="logo ohmyfood">
 			</a>
 			<div class="footer__info">
 				<a
@@ -207,7 +231,7 @@
 				</a>
 				<a
 					class="footer__info__link"
-					href="#">
+					href="mailto:contact@ohmyfood.fr">
 					Contact
 				</a>
 			</div>
