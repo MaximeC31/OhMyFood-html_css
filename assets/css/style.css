@@ -48,7 +48,7 @@ body {
 	transition: all 2s;
 	opacity: 0;
 	pointer-events: none;
-	animation: loading 2s;
+	animation: loading 3s;
 }
 
 .loader__spinner {
@@ -467,6 +467,12 @@ body {
 	border-radius: var(--size-xxxl);
 	text-decoration: none;
 	box-shadow: 0 var(--size-xs) var(--size-sm) 0 var(--black-low-opacity);
+}
+
+.menu__details__cta:hover {
+	background-image: var(--purple-to-pink-gradient);
+	opacity: 0.9;
+	box-shadow: 0 var(--size-xs) var(--size-md) 0 var(--black-low-opacity);
 }
 
 .footer {
